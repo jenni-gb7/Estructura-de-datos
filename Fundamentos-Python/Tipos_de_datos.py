@@ -1,6 +1,6 @@
 '''
-Alberto Martínez Barbosa
-7 de septiembre de 2024.
+Jennifer Marlene Gutierrez Beteta
+7 de septiembre de 2024
 Descripción:
 Usos de los tipos básico de datos en Python.
 '''
@@ -26,8 +26,8 @@ mi_variable_decimal = 12.12
 print("Tipo de dato decimal:", mi_variable_decimal)
 
 # Cadena de texto
-mi_variable_texto_nombre = "Alberto"
-mi_variable_texto_apellido = 'Martinez'
+mi_variable_texto_nombre = "Jennifer"
+mi_variable_texto_apellido = 'Gutierrez'
 print("Cadena de texto:", mi_variable_texto_nombre, mi_variable_texto_apellido)
 
 # Booleno
