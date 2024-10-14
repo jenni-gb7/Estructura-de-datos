@@ -5,7 +5,6 @@ Descripción:
 Realizar un programa que sera el ejercicio de la leccion Tipos_de_datos, el cual mostrará nuestros gastos diarios pero en este caso solo seran del los dias lunes y martes.
 '''
 
-# Notas:
 
 
 print("*** Gastos diarios***")      #Se imprime el titulo.
