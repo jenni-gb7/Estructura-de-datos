@@ -80,4 +80,4 @@ print(f"¿El valor de {segundo_num_float} es verdadero? {val_booleano}.")
 
 val_booleano = bool(tercer_num_int)
 print(f"¿El valor de {tercer_num_int} es verdadero? {val_booleano}.")
-print("Si el valor es 0, la función bool regresa False ya que las únicas condiciónes para que sea False son que el valor sea 0, que el contenido de la variable este vacía o que el valor sea None.")
+print("Si el valor es 0, la función bool regresa False ya que las únicas condiciones para que sea False son que el valor sea 0, que el contenido de la variable este vacía o que el valor sea None.")
