@@ -13,7 +13,7 @@ de cadena a entero, de cadena a número flotante, y viceversa.'''
 #a) Convierta los siguientes números en cadenas: 3.14159265, 12, 0.
 # *****   Conversión de número a cadena     *****
 
-primer_num= 3.14159265                  #Declaramos nuestras variables.
+primer_num= 3.14159265                 #Declaramos nuestras variables.
 segundo_num= 12
 tercer_num= 0
 
