@@ -6,14 +6,15 @@ Sentencia if.
 Programa para determinar la mayoria de edad.
 '''
 
-#Programa para determinar la mayoria de edad.
+#Programa para determinar la mayoraí de edad.
 
 #if condicion:
-    #Condicion a ejecutar.
-    #La condicion es verdadera.
+    #Condición a ejecutar.
+    #La condición es verdadera.
 
-edad= input("Ingresa tu edad:")
-edad=int(edad)
+edad= input("Ingresa tu edad:")     #Se ingresa la edad.
+edad=int(edad)          #Conversión de cadena a entero.
 
-if int(edad>=18):
+if int(edad>=18):               #Condición si la edad es mayor de edad, se imprime el mensaje.
     print("es mayor de edad")
+                                #Sino solo termina el programa.
