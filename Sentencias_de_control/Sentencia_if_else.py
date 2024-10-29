@@ -3,7 +3,7 @@ Jennifer Marlene Gutierrez Beteta
 23 de octubre de 2024
 Descripción:
 Sentencia if else.
-Programa que determina si un numero es par e impar.
+Programa que determina si un número es par e impar.
 '''
 
 #if condicion:
