@@ -2,12 +2,12 @@
 Jennifer Marlene Gutierrez Beteta
 23 de octubre de 2024
 Descripción:
-Sentencia if elsif else.
+Sentencia if elif else.
 Programa que determina si un numero es par e impar.
 '''
 
 #If elif else condición:
-#Tiene que buscar en que condición entrar, sino se cumple la primera, se va con la segunda y asi sucesivamente hasta llegar al else.
+#Tiene que buscar en que condición entrar, sino se cumple la primera, se va con la segunda y así sucesivamente hasta llegar al else.
 
 num1= input("Ingresa tu edad:")     #Se ingresa la edad.
 num1=int(num1)                      #Conversión de cadena a entero.
