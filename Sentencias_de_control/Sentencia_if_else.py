@@ -11,13 +11,13 @@ Programa que determina si un numero es par e impar.
     #La condicion es verdadera.
 
 #else:
-    #Codigo que se ejecuta.
+    #Código que se ejecuta.
     #Con verdadero.
 
-num1= input("Ingresa tu edad:")
-num1=int(num1)
+num1= input("Ingresa tu edad:")     #Se ingresa la edad.
+num1=int(num1)                      #Conversión de cadena a entero.
 
-if int(num1 %2 == 0):
-    print("El número es par")
+if int(num1 %2 == 0):               #Condición si el módulo de el numero es igual a cero.
+    print("El número es par")       #Se imprime que es par.
 else:
-    print("El número es impar")
+    print("El número es impar")     #Sino se imprime que es impar.
