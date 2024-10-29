@@ -6,7 +6,7 @@ Sentencia if.
 Programa para determinar la mayoria de edad.
 '''
 
-#Programa para determinar la mayoraí de edad.
+#Programa para determinar la mayoría de edad.
 
 #if condicion:
     #Condición a ejecutar.
