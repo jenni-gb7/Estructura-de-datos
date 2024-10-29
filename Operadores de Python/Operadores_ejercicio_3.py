@@ -12,8 +12,8 @@ CONTRASEÑA_1 = "tercero"
 
 print("*** Sistema de auteuntificación ***")
 print(" ")
-usuario = (input("Ingresa tu usuario:"))            #Pedir usuario.
-contraseña = (input("Ingresa tu contraseña:"))      #Pedir contraseña.
+usuario = input("Ingresa tu usuario:")            #Pedir usuario.
+contraseña = input("Ingresa tu contraseña:")    #Pedir contraseña.
 
 
 print(f"¿El acceso es correcto? {usuario == USUARIO_1 and contraseña == CONTRASEÑA_1}")     #Hacer la comparación si el usuario y la contraseña son iguales.
