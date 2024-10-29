@@ -20,7 +20,6 @@ print(num1)     #Imprime el resultado de la multiplicación de la suma anterior 
 num2 /=4
 print(num2)     #Imprime el resultado de la división de la resta anterior / 4.
 
-#////////
 
 print(" ")
 num1=8
