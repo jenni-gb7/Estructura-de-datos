@@ -56,4 +56,4 @@ while opcion != 0:
         print(f"La opción no es válida")
 
 
-print(f"Saliendo del programa")
+print(f"Saliendo del programa...")
