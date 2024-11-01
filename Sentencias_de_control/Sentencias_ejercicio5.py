@@ -9,7 +9,7 @@ Este programa determinará el promedio de una materia e indicará si el alumno a
 print("*** Programa para calcular el promedio de una materia ***")
 print(" ")
 
-##Ingresa su calificaión, se hace la conversión de cadena a entero.
+#Ingresa su calificaión, se hace la conversión de cadena a entero.
 parcial_1 = int(input("Ingresa la calificación del parcial 1:"))
 parcial_2 = int(input("Ingresa la calificación del parcial 2:"))
 parcial_3 = int(input("Ingresa la calificación del parcial 3:"))
