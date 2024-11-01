@@ -34,19 +34,29 @@ while opcion != 0:
     print(" ")
     print("[0].- Salir")
     print("[1].- Calcular el área de un rectángulo.")
-    print("[2].- Ingresa saldo")
-    print("[3].- Retirar saldo")
+    print("[2].- Calcular el perímetro de un rectángulo.")
+    print("[3].- Calcular el área de un círculo.")
+    print("[4].- Calcular el perímetro de un círculo.")
     print(" ")
 
-    opcion = int(input("Ingresa una opción: "))
+    opcion = float(input("Ingresa una opción: "))
     if opcion == 1:
-        print(f"Su saldo es de: $ {saldo :.2f}")
+        base_b = float(input("Ingresa la base del rectángulo: "))
+        altura_h = float(input("Ingresa la altura del rectángulo: "))
+        area_a = base_b * altura_h
+        print(f"El área del rectángulo es de: {area_a: .2f} cm")
     elif opcion == 2 :
-        saldo_1= float(input("Ingrese su saldo: $"))
-        saldo = saldo + saldo_1
+        base_b = float(input("Ingresa la base del rectángulo: "))
+        altura_h = float(input("Ingresa la altura del rectángulo: "))
+        perimetro_r = 2 * (base_b + altura_h)
+        print(f"El perímetro del rectángulo es de: {perimetro_r: .2f} cm")
     elif opcion == 3:
-        saldo_retirar= float(input(f"Saldo a retirar: $"))
-        saldo_retirado= saldo - saldo_retirar
-        print(f"Saldo retirado: $ {saldo_retirado:.2f}")
+        radio_c = float(input("Ingresa el radio del círculo: "))
+        perimetro_c = 2 * 3.1416 * radio_c
+        print(f"El área del círculo es de : {perimetro_c: .3f} cm")
+    elif opcion == 4:
+        radio_c = float(input("Ingresa el radio del círculo: "))
+        area_c = 3.1416 * (radio_c ** 2)
+        print(f"El área del círculo es de : {area_c: .3f} cm")
     else:
-        print(f"La opción no es válida")
+        print("opción no es válida")
