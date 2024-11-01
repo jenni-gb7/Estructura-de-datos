@@ -41,22 +41,24 @@ while opcion != 0:
 
     opcion = float(input("Ingresa una opción: "))
     if opcion == 1:
-        base_b = float(input("Ingresa la base del rectángulo: "))
-        altura_h = float(input("Ingresa la altura del rectángulo: "))
+        base_b = float(input("Ingresa la base: "))
+        altura_h = float(input("Ingresa la altura: "))
         area_a = base_b * altura_h
-        print(f"El área del rectángulo es de: {area_a: .2f} cm")
+        print(f"El área del rectángulo es: {area_a: .3f} cm")
     elif opcion == 2 :
-        base_b = float(input("Ingresa la base del rectángulo: "))
-        altura_h = float(input("Ingresa la altura del rectángulo: "))
+        base_b = float(input("Ingresa la base: "))
+        altura_h = float(input("Ingresa la altura: "))
         perimetro_r = 2 * (base_b + altura_h)
-        print(f"El perímetro del rectángulo es de: {perimetro_r: .2f} cm")
+        print(f"El perímetro del rectángulo es: {perimetro_r: .3f} cm")
     elif opcion == 3:
-        radio_c = float(input("Ingresa el radio del círculo: "))
-        perimetro_c = 2 * 3.1416 * radio_c
-        print(f"El área del círculo es de : {perimetro_c: .3f} cm")
-    elif opcion == 4:
-        radio_c = float(input("Ingresa el radio del círculo: "))
+        radio_c = float(input("Ingresa el radio: "))
         area_c = 3.1416 * (radio_c ** 2)
-        print(f"El área del círculo es de : {area_c: .3f} cm")
+        print(f"El área del círculo es: {area_c: .3f} cm")
+    elif opcion == 4:
+        radio_c = float(input("Ingresa el radio: "))
+        perimetro_c = 2 * 3.1416 * radio_c
+        print(f"El área del círculo es: {perimetro_c: .3f} cm")
     else:
         print("opción no es válida")
+
+print(f"Saliendo del programa...")
