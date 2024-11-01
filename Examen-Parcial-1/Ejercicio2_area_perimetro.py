@@ -28,7 +28,7 @@ e) Repita el menú hasta salir.
 '''
 
 opcion = 1
-while opcion != 0:
+while opcion != 4:
     print(" ")
     print("*** Programa que calcula el área y el perímetro ***")
     print(" ")
@@ -58,8 +58,9 @@ while opcion != 0:
         radio_c = float(input("Ingresa el radio: "))
         perimetro_c = 2 * 3.1416 * radio_c
         print(f"El área del círculo es: {perimetro_c: .3f} cm")
+    elif opcion == 0:
+        print(f"Saliendo del programa...")
     else:
         print("La opción no es válida")
 
 
-print(f"Saliendo del programa...")
