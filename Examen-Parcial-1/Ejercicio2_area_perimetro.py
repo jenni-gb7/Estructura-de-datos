@@ -32,11 +32,11 @@ while opcion != 0:
     print(" ")
     print("*** Programa que calcula el área y el perímetro ***")
     print(" ")
-    print("[0].- Salir")
     print("[1].- Calcular el área de un rectángulo.")
     print("[2].- Calcular el perímetro de un rectángulo.")
     print("[3].- Calcular el área de un círculo.")
     print("[4].- Calcular el perímetro de un círculo.")
+    print("[0].- Salir")
     print(" ")
 
     opcion = float(input("Ingresa una opción: "))
