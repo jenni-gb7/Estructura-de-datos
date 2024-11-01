@@ -61,4 +61,5 @@ while opcion != 0:
     else:
         print("La opción no es válida")
 
+
 print(f"Saliendo del programa...")
