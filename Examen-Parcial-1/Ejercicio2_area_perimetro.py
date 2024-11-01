@@ -28,7 +28,7 @@ e) Repita el menú hasta salir.
 '''
 
 opcion = 1
-while opcion != 4:
+while opcion != 0:
     print(" ")
     print("*** Programa que calcula el área y el perímetro ***")
     print(" ")
