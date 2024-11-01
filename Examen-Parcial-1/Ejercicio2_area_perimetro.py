@@ -59,6 +59,6 @@ while opcion != 0:
         perimetro_c = 2 * 3.1416 * radio_c
         print(f"El área del círculo es: {perimetro_c: .3f} cm")
     else:
-        print("opción no es válida")
+        print("La opción no es válida")
 
 print(f"Saliendo del programa...")
