@@ -43,8 +43,8 @@ while opcion != 0:
     if opcion == 1:
         base_b = float(input("Ingresa la base: "))
         altura_h = float(input("Ingresa la altura: "))
-        area_a = base_b * altura_h
-        print(f"El área del rectángulo es: {area_a: .3f} cm")
+        area_r = base_b * altura_h
+        print(f"El área del rectángulo es: {area_r: .3f} cm")
     elif opcion == 2 :
         base_b = float(input("Ingresa la base: "))
         altura_h = float(input("Ingresa la altura: "))
