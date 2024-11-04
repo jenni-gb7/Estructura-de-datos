@@ -54,3 +54,4 @@ while contador <= num1:
         # Solo imprime el número de manera normal, separado por una coma.
         print(contador, end=", ")
     contador += 1
+# Se termina el ciclo.
