@@ -17,7 +17,6 @@ a) Solicite un número en consola.
 b) Realizar la lógica adecuada para imprimir los números o mensajes adecuados.
 
 c) Mostrar los resultados en consola.
-
 '''
 
 print(" ")
@@ -50,7 +49,7 @@ while contador <= num1:
     elif contador %5 == 0:
         # Se sustituyen estos números por la palabra "Informática", separado por una coma.
         print("Informática,",end=" ")
-        # Si no cumple ninguna de estas conciciones.
+        # Si no cumple ninguna de estas condiciones.
     else:
         # Solo imprime el número de manera normal, separado por una coma.
         print(contador, end=", ")
