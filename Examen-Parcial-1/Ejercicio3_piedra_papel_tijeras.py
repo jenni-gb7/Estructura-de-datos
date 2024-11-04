@@ -76,7 +76,7 @@ while opcion_jugador != 0:
         print(f"Jugador: {opciones[opcion_jugador]}.", end=" ")
         print(f"CPU: {opciones[opcion_cpu]}.", end=" ")
         print("El ganador es el jugador.")
-        # Entonces es victorias del jugador y se acomula en la variable.
+        # Entonces es victoria del jugador y se acomula en la variable.
         victorias_del_jugador += 1
     # Condición: Si se cumplen que piedra y tijera o papel y piedra o tijera y papel, el que sea superior gana, ya sea el jugador o la CPU.
     elif (opcion_cpu == 1 and opcion_jugador == 3) or (opcion_cpu == 2 and opcion_jugador == 1) or (opcion_cpu == 3 and opcion_jugador == 2):
@@ -84,7 +84,7 @@ while opcion_jugador != 0:
         print(f"Jugador: {opciones[opcion_jugador]}.", end=" ")
         print(f"CPU: {opciones[opcion_cpu]}.", end=" ")
         print("El ganador es el CPU.")
-        # Entonces es  victorias del cpu y se acomula en la variable.
+        # Entonces es  victoria del cpu y se acomula en la variable.
         victorias_del_cpu += 1
         # Si la opcion es == cero, el juego termina.
     elif opcion_jugador == 0:
