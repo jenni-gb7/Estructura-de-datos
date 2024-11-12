@@ -6,13 +6,13 @@ Funciones.
 '''
 
 # Para utilizar funciones se ocupa la palabra reservada (def):
-'''
+
 def hola(nombre):
     print(f"Hola {nombre}")
 nombre = input("Ingrese nombre: ")
 hola(nombre)
 print("Adiós")
-'''
+
 # Ejemplo 1:
 
 # Se implementa la función menú.
