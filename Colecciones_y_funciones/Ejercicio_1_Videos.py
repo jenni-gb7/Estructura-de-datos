@@ -26,14 +26,18 @@ def menu():
 # Se implementa la función calculadora.
 def videos(opcion):
     if opcion == 1:
-        alumnos = []
         print(alumnos)
     elif opcion == 2:
-        resultado = numero_1 - numero_2
+        alumnos.sort()
+        print(alumnos)
+        print()
     elif opcion == 3:
-        resultado = numero_1 * numero_2
+        alumnos.sort(reverse=True)
+        print(alumnos)
+        print()
     elif opcion == 4:
-        resultado = numero_1 / numero_2
+
+
     elif opcion == 5:
         resultado = numero_1 / numero_2
     elif opcion == 6:
