@@ -2,7 +2,7 @@
 Jennifer Marlene Gutierrez Beteta
 13 de noviembre de 2024.
 Descripción:
-Ejericio 2.
+Ejericio 2, Listas de compras.
 '''
 
 print("*** Videos de You Tube  ***")
