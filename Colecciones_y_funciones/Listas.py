@@ -4,6 +4,7 @@ Jennifer Marlene Gutierrez Beteta
 Descripción:
 Listas.
 '''
+from Ciclos.Ejercicio_3 import contador
 
 # Crear lista.
 '''
@@ -51,4 +52,10 @@ alumnos.sort(reverse = True)
 print(alumnos)
 print()
 
-print(alumnos[11])
+print("-------------------------------------------------------")
+
+
+alumnos.pop()
+print(alumnos)
+print()
+
