@@ -5,43 +5,49 @@ Descripción:
 Ejericio 2, Listas de compras.
 '''
 
-print("*** Videos de You Tube  ***")
 
-# Se implementa la función menú.
-def menu():
-    print(" ")
-    print("*** Ménu  ***")
+productos = []
+cantidades = []
+opcion  = 1
+contador = 0
+while opcion != 0:
+    print("*** Listas de compras**+")
     print(" ")
     print("[0].- Salir")
-    print("[1].- Añadir productos a la lista")
-    print("[2].- Eliminar productos de la lista")
+    print("[1].- Ver lista de compras")
+    print("[2].- Añadir productos a la lista")
+    print("[3].- Eliminar productos de la lista")
     print(" ")
-    opcion = int(input("Ingresa una opción: "))
-    return opcion
-
-def compras(opcion):
-    if opcion == 1:
-        productos = [productos]
-        productos = input("Ingrese el nombre del producto:")
-        cantidad = [cantidad]
-        cantidad = int(input("Ingrese la cantidad del producto:"))
-
+    opcion  = int(input("Ingresa una opción: "))
+    if opcion   == 1:
+        numero = 0
+        for producto in productos:
+            print(f"{cantidades[numero]}- {producto}")
+            numero += 1
     elif opcion == 2:
-        productos.pop()
-        print(productos)
         print()
+        producto_añadido = input("Ingrese el producto: ")
+        cantidad_añadida = input("Ingrese la cantidad del producto: ")
+        productos.append(producto_añadido)
+        cantidades.append(cantidad_añadida)
+        contador += 1
+        print()
+    elif opcion == 3:
+        eliminar_producto = input("Ingrese el producto que desea eliminar: ")
+        numero_producto = 0
 
-        cantidad.pop()
-        print(cantidad)
-        print()
+        while productos[numero_producto] != eliminar_producto:
+            numero_producto += 1
+
+        productos.remove(eliminar_producto)
+        del cantidades[numero_producto]
 
     else:
-        print("No valido")
-    return productos,cantidad
+        print()
+        print("Opción incorrecta")
+        print()
+print()
+print("Saliendo del programa...")
 
 
 
-
-opcion = menu()
-productos = []
-cantidad = []
