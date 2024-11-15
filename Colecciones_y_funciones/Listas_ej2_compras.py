@@ -8,7 +8,7 @@ Ejericio 2, Listas de compras.
 
 productos = []
 cantidades = []
-opcion  = 1
+opcion  = None
 contador = 0
 while opcion != 0:
     print("*** Listas de compras**+")
@@ -22,14 +22,14 @@ while opcion != 0:
     if opcion   == 1:
         numero = 0
         for producto in productos:
-            print(f"{cantidades[numero]}- {producto}")
+            print(f"Cantidad: {cantidades[numero]} Producto: {producto}")
             numero += 1
     elif opcion == 2:
         print()
-        producto_añadido = input("Ingrese el producto: ")
-        cantidad_añadida = input("Ingrese la cantidad del producto: ")
-        productos.append(producto_añadido)
-        cantidades.append(cantidad_añadida)
+        producto_anadido = input("Ingrese el producto: ")
+        cantidad_anadida = input("Ingrese la cantidad del producto: ")
+        productos.append(producto_anadido)
+        cantidades.append(cantidad_anadida)
         contador += 1
         print()
     elif opcion == 3:
