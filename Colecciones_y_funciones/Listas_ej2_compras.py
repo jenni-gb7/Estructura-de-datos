@@ -9,7 +9,6 @@ Ejericio 2, Listas de compras.
 productos = []
 cantidades = []
 opcion  = None
-contador = 0
 while opcion != 0:
     print("*** Listas de compras**+")
     print(" ")
@@ -30,7 +29,6 @@ while opcion != 0:
         cantidad_anadida = input("Ingrese la cantidad del producto: ")
         productos.append(producto_anadido)
         cantidades.append(cantidad_anadida)
-        contador += 1
         print()
     elif opcion == 3:
         eliminar_producto = input("Ingrese el producto que desea eliminar: ")
