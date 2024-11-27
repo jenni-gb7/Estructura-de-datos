@@ -32,11 +32,6 @@ a) Solicite el número de filas de la pirámide.
 b) Muestre los tres tipos de pirámides utilizando la lógica adecuada.
 '''
 
-#Galilea Peralta Contreras.
-#25 de noviembre del 2024.
-#Descripción:
-#Este programa imprime una pirámide de caracteres '*' en cuatro formas diferentes según la cantidad de filas.
-
 
 def Piramide_1(Numero_filas):
     print()
