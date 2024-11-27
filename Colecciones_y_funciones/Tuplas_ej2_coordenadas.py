@@ -3,7 +3,7 @@ Jennifer Marlene Gutierrez Beteta
 21 de noviembre de 2024.
 Descripción:
 Ejercicio 1 Tuplas.
-Este programa muestra el valor máximo y mínimo de una lista de números. En este caso, la tupla se utiliza para devolver los valores máximo y mínimo de la función.
+Este programa permite obtener la ecuacion de la recta.
 .
 '''
 '''
