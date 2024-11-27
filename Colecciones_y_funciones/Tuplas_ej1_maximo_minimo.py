@@ -23,24 +23,6 @@ Se debe mostrar el siguiente menú:
 
 Cualquier otro caso -> Opción no válida.'''
 
-#Galilea Peralta Contreras.
-#19 de noviembre del 2024.
-#Descripción:
-#Este programa muestra el valor máximo y mínimo de una lista de números proporcionada por el usuario.
-
-"""
-Este programa muestra el valor máximo y mínimo de una lista de números. En este caso, la tupla se utiliza para devolver los valores máximo y mínimo de la función.
-Se debe mostrar el siguiente menú:
-  ***  Valor máximo y mínimo de una lista de números del usuario  ***
-1) Ver lista de números.
-2) Añadir número a la lista.
-3) Determinar el valor máximo y mínimo de la lista de números.
-0) Salir.
-Cualquier otro caso -> Opción no válida.
-Para ello:
-a) Se sugiere utilizar una función para mostrar el menú.
-b) Se debe utilizar una única función para devolver el valor máximo y mínimo en una tupla.
-"""
 #Función que muestra el menú.
 def Menu():
     print("*** Listas de compras**+")
