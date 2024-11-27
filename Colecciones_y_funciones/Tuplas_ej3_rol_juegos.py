@@ -2,8 +2,7 @@
 Jennifer Marlene Gutierrez Beteta
 24 de noviembre de 2024.
 Descripción:
-Ejercicio 1 Tuplas.
-Este programa permite obtener la ecuacion de la recta.
+Este programa almacena 8 jornadas en 2 equipos, los cuales compiten entre sí.
 .
 '''
 
