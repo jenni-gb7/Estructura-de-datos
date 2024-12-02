@@ -20,17 +20,19 @@ print("------------------------------------------------------")
 
 Diccionario_jenni={}
 Diccionario_jenni['Nombre']="Jenni"
-Diccionario_jenni['Primer apellido']="Gutiérrez"
+Diccionario_jenni['Primer_apellido']="Gutiérrez"
 Diccionario_jenni['Segundo apellido']="Beteta"
 Diccionario_jenni['Grupo']="303"
 Diccionario_jenni['Materia favorita']="Gutiérrez"
 print(Diccionario_jenni)
 print("------------------------------------------------------")
 # Se accede de las 2 maneras.
-Nombre_alumno = Diccionario_jenni.get("Nombre")
-Apellido_alumno = Diccionario_jenni["Primer apellido"]
+Nombre_alumno = Diccionario_jenni.get('Nombre')
+Apellido_alumno = Diccionario_jenni['Primer_apellido']
 print(Nombre_alumno)
 print(Apellido_alumno)
+# Para acceder solo tienes que ingresar con la palabra clave.
+print(Diccionario_jenni['Primer_apellido'])
 print("------------------------------------------------------")
 Diccionario_jenni['Nombre']="Mar"
 Diccionario_jenni['Grupo']="303"
