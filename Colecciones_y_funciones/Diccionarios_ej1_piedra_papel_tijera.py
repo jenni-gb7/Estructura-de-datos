@@ -24,15 +24,15 @@ d) Muestre la elección del jugador y la del cpu.
 e) Muestre la cantidad de victorias, empates y derrotas.
 f) Repita nuevamente el menú hasta salir.
 '''
-from random import random, choice #la selección aleatoria de la CPU.
+from random import random, choice # La selección aleatoria de la CPU.
 
-#Inicialización de variables.
+# Inicialización de variables.
 Opcion = None
 Victorias_jugador = 0 # Contador de victorias del jugador.
 Empates = 0 # Contador de empates.
 Victorias_CPU = 0  # Contador de victorias del CPU.
 
-#Opciones del juego y los resultados.
+# Opciones del juego y los resultados.
 PIEDRA = "Piedra."
 PAPEL = "Papel."
 TIJERA = "Tijera."
@@ -40,7 +40,7 @@ JUGADOR = "Gana el jugador."
 EMPATE = "Empate."
 CPU = "Gana la CPU."
 
-#Función que muestra el menú de las opciones del jugador.
+# Función que muestra el menú de las opciones del jugador.
 def Menu():
     print("  ***  Juego de piedra, papel o tijeras  ***")
     print(f"Victorias del jugador: {Victorias_jugador}, empates: {Empates} y victorias del CPU: {Victorias_CPU}  ")
@@ -52,7 +52,7 @@ def Menu():
     Opcion = int(input("Ingresa una opción: "))
     return Opcion
 
-#Función que realiza la elección del jugador y la del CPU.
+# Función que realiza la elección del jugador y la del CPU.
 def Eleccion_jugador(Opcion_jugador):
     Lista = []
     # opción del jugador según la entrada seleccionada.
@@ -67,11 +67,11 @@ def Eleccion_jugador(Opcion_jugador):
     Lista.append(PIEDRA)
     Lista.append(PAPEL)
     Lista.append(TIJERA)
-    # Eleccion de la CPU aleatoriamente entre las opciones.
+    # Elección de la CPU aleatoriamente entre las opciones.
     Opcion_CPU = choice(Lista)
     return Jugador,Opcion_CPU
 
-#Diccionario que define las reglas del juego.
+# Diccionario que define las reglas del juego.
 Piedra_papel_tijera = {(PIEDRA, TIJERA): JUGADOR,
                        (PIEDRA, PAPEL): CPU,
                        (TIJERA, PAPEL): JUGADOR,
@@ -80,7 +80,7 @@ Piedra_papel_tijera = {(PIEDRA, TIJERA): JUGADOR,
                        (PAPEL, TIJERA): CPU,
                        }
 
-while Opcion != 0: #El juego continúa mientras el jugador no elija salir.
+while Opcion != 0: # El juego continúa mientras el jugador no elija salir.
     Opcion = Menu()
     Opcion_Jugador, Opcion_CPU = Eleccion_jugador(Opcion)   # Obtiene la elección del jugador y del CPU.
 
