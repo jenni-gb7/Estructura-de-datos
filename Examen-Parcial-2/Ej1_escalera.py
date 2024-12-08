@@ -80,6 +80,7 @@ while Num_de_escalones != 0:
     Num_de_escalones = int(input("Ingresa el número de escalones (positivo - ascendente y negativo - descendente) o ingresa un cero para salir:"))
 
     if Num_de_escalones == 0: # Salir del programa.
+        print()
         print("Fin del programa.")
     elif Num_de_escalones > 0: # El número de escalones es positivo.
         Ascendente(Num_de_escalones)
