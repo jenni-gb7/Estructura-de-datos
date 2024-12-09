@@ -73,7 +73,7 @@ def Descendente(Num_de_escalones):
     print(f"{Guion_bajo}")
 
 Num_de_escalones = None
-while Num_de_escalones != 0:
+while Num_de_escalones != 0: # El juego continúa mientras el jugador no elija salir.
     print()
     print("***  Ejercicio 1. La escalera.  ***")
     # Se solicita el número de escalones al usuario.
