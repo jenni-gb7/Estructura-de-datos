@@ -42,7 +42,7 @@ a) Utilice la lógica adecuada para convertir el texto al lenguaje hacker básic
 
 b) Se debe convertir los caracteres sin importar si son mayúsculas o minúsculas, sin modificar los caracteres que no se convirtieron. Ejemplos con el lenguaje básico: hola -> h0l4, Hola -> H0l4, HOLA -> H0L4.
 '''
-# Función para el ménu.
+# Función para el menú.
 def Menu_2():
     print()
     print("****  Ejercicio 3. Lenguaje hacker (l33t sp34k).  ***")
