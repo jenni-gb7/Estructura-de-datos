@@ -138,7 +138,7 @@ def hacer_preguntas():
                     break
                 else:
                     print("Por favor, elige una opción entre 1 y 4.")
-            except ValueError:
+            except ValueError: # Por si escoge un número inválido.
                 print("Entrada no válida. Debes elegir un número entre 1 y 4.")
 
     # Determinamos la casa final.
