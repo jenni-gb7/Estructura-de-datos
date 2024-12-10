@@ -84,7 +84,7 @@ while Num_de_escalones != 0: # El juego continúa mientras el jugador no elija s
         print("Fin del programa.")
     elif Num_de_escalones > 0: # El número de escalones es positivo.
         Ascendente(Num_de_escalones)
-    elif Num_de_escalones < 0: # El número de escalones es positivo.
+    elif Num_de_escalones < 0: # El número de escalones es negativo.
         Descendente(Num_de_escalones)
     else:
         print("Opcion no válida.") # Opción inválida.
