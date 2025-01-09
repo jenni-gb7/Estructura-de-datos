@@ -5,30 +5,44 @@ Descripción:
 Ejercicio 2, Parcial 3.
 '''
 
+def menu():
+    print("[1].- Convertir a entero")
+    print("[2].- Convertir a flotante")
+    print("[0].-Salir")
 
-def Menu_opcion(opciones):
-    pass # Pass,instrucción que no hace nada (se pueden utilizar Pass o ...).
-
-def cadena_a_entero(cadena:str) -> int | None:
-
-    pass
-
-def cadena_a_flotante(cadena):
-    rais = NotImplementedError("Implementar la función")
+    opcion = int(input("Ingresa una de las opciones: "))
+    return opcion
 #
+def cadena_a_entero(cadena: str) -> int | None:
+    no_guiones = cadena.count("-")
+    revisar_cadena = cadena.lstrip("-")
 
-opcion = Menu_opcion()
-# cadena_a_entero()
-# cadena_a_flotante()
-while opcion!= 0:
-    if opcion== 1:
-        num_cadena = input("Ingresa número a convertir en entero")
-        cadena_a_entero(num_cadena)
-    elif opcion == 2:
-        num_cadena = input("Ingresa número a convertir en flotante")
-        cadena_a_flotante(num_cadena)
-        # while numero != None:
-    elif opcion == 0:
-        print("Salir...")
+    if revisar_cadena.isnumeric() and no_guiones in(0,1) :
+        return  int(cadena)
     else:
-        print("Opciónn no valida...")
+        return None
+#
+def cadena_a_flotante(cadena):
+    def cadena_a_flotante(cadena):
+        no_puntos = cadena.count(".")
+        no_guiones = cadena.count("-")
+        revisar_cadena = cadena.lstrip("-").replace(".", "")
+
+        if revisar_cadena.isnumeric() and no_guiones in (0, 1) and no_puntos in (0, 1):
+            return float(cadena)
+        else:
+            return None
+opcion = menu()
+
+while opcion != 0:
+    if opcion == 1:
+        num_cadena = input("Ingresa un número a converir: ")
+        num_cadena = cadena_a_entero(num_cadena)
+        print(f"el resultado final es {num_cadena}")
+    else:
+        if opcion == 2:
+            num_cadena = input("Ingresa un número a converir: ")
+            num_cadena = cadena_a_flotante(num_cadena)
+            print(f"el resultado final es {num_cadena}")
+
+print("Salio del programa")
