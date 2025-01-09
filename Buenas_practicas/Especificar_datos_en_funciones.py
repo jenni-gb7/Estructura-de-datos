@@ -15,7 +15,7 @@ def cadena_a_entero(cadena:str) -> int | None:
 
 def cadena_a_flotante(cadena):
     rais = NotImplementedError("Implementar la función")
-
+#
 
 opcion = Menu_opcion()
 # cadena_a_entero()
