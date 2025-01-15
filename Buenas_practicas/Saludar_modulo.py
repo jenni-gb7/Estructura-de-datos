@@ -11,3 +11,4 @@ def Saludar(nombre: str ) -> int | None:
 if __name__ == '__main__':
     Nombre = input("Ingresa un nombre: ")
     Saludar(Nombre)
+    print(Saludar.__name__) # indica si el código es el que se ejecuta.
