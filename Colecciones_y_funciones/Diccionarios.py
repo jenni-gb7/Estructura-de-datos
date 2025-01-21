@@ -5,7 +5,7 @@ Descripción:
 Diccionario.
 '''
 
-# Los diccionarios son ordenados.
+# Los diccionarios son ordenados e inmutables con llaves.
 
 print("*** Ejemplo de uso ***")
 
