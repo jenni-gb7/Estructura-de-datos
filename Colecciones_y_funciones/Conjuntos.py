@@ -7,6 +7,7 @@ Conjuntos.
 
 # Desordenado.
 # Mutables.
+# Con llaves.
 
 print()
 print("*** Ejemplos de uso de los conjuntos ***")
