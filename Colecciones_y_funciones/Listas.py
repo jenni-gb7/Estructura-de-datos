@@ -5,7 +5,7 @@ Descripción:
 Listas.
 '''
 
-
+# con corchetes.
 #Ordenado: que cada cosa  tiene un orden especifico
 #Mutable: es que cambia
 
