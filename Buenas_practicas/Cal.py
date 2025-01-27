@@ -14,8 +14,8 @@ def menu() -> int:
             if seleccion == 0 or seleccion == 1 or seleccion == 2:
                 seguir = False  # salir
                 return seleccion
-        print("Por favor, ingresa una opción válida 😳")
-
+        print("Por favor, ingresa una opción válida")
+#
 def sumar(uno, dos) -> int:
     total = uno + dos
     print(total)
