@@ -5,11 +5,11 @@ Descripción:
 Examen Parcial 3: Juego 4 en raya.
 '''
 
-tablero = [" "] * 42 # Se crea una lista para 9 elementos, inicializada en espacios en blanco.
+tablero = [" "] * 42  # Se crea una lista para 42 elementos, inicializada en espacios en blanco.
 
 def Imprimir_tablero():
     '''
-    Función para la impresion del tablero.
+    Función para la impresión del tablero.
     '''
     print(f"{tablero[36]} | {tablero[37]} | {tablero[38]} | {tablero[39]} | {tablero[40]} | {tablero[41]}")
     print(f"{tablero[30]} | {tablero[31]} | {tablero[32]} | {tablero[33]} | {tablero[34]} | {tablero[35]}")
@@ -20,31 +20,70 @@ def Imprimir_tablero():
     print(f"{tablero[0]} | {tablero[1]} | {tablero[2]} | {tablero[3]} | {tablero[4]} | {tablero[5]}")
 
 def Verificar_ganador():
-    # Combinaciones ganadoras
-    combinaciones = [
-        [0,6,12,18],[6,12,18,24],
-    ]
+    '''
+    Función para verificar si hay un ganador.
+    '''
+    combinaciones = []
+
+    # Horizontales
+    for fila in range(0, 42, 6):
+        for col in range(3):
+            combinaciones.append([fila + col, fila + col + 1, fila + col + 2, fila + col + 3])
+
+    # Verticales
+    for col in range(6):
+        for fila in range(18):
+            combinaciones.append([fila + col, fila + col + 6, fila + col + 12, fila + col + 18])
+
+    # Diagonales (\)
+    for fila in range(18):
+        for col in range(3):
+            combinaciones.append([fila + col, fila + col + 7, fila + col + 14, fila + col + 21])
+
+    # Diagonales (/)
+    for fila in range(18):
+        for col in range(3, 6):
+            combinaciones.append([fila + col, fila + col + 5, fila + col + 10, fila + col + 15])
+
+    # Verificar las combinaciones
     for c in combinaciones:
-        if tablero[c[0]] == tablero[c[1]] == tablero[c[2]] == tablero[c[3]]!= " ":  # Recorre cada combinación en la lista.
+        if tablero[c[0]] == tablero[c[1]] == tablero[c[2]] == tablero[c[3]] != " ":
             return True
     return False
 
 def Jugar():
+    '''
+    Función principal para jugar.
+    '''
     jugador = "X"
-    for turno in range(9):
+    while True:
         Imprimir_tablero()
-        posicion = int(input(f"Jugador {jugador}, elige una posición (1-7): ")) - 1
-        if tablero[posicion] == " ":
-            tablero[posicion] = jugador
-            if Verificar_ganador():
-                Imprimir_tablero()
-                print(f"¡Jugador {jugador} ha ganado!")
-                return
-            jugador = "O" if jugador == "X" else "X"    # Cambia el jugador de X a 0, o visevera.
+        columna = input(f"Jugador {jugador}, elige una columna (1-6): ")
+
+        # Validar si la entrada es un número y está en el rango correcto
+        if not columna.isdigit() or not (1 <= int(columna) <= 6):
+            print("Entrada inválida. Ingresa un número del 1 al 6.")
+            continue
+
+        columna = int(columna) - 1  # Convertir a índice de la lista
+        # Colocar la ficha en la posición más baja disponible de la columna
+        for fila in range(6):
+            posicion = columna + fila * 6
+            if tablero[posicion] == " ":
+                tablero[posicion] = jugador
+                break
         else:
-            print("Posición ocupada, intenta de nuevo.")
-    Imprimir_tablero()
-    print("¡Es un empate!")
+            print("Columna llena. Intenta en otra columna.")
+            continue
+
+        # Verificar ganador
+        if Verificar_ganador():
+            Imprimir_tablero()
+            print(f"¡Jugador {jugador} ha ganado!")
+            return
+
+        # Cambiar de jugador
+        jugador = "O" if jugador == "X" else "X"
 
 if __name__ == "__main__":
     Jugar()
