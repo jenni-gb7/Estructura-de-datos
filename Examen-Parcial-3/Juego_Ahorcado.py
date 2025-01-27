@@ -97,7 +97,7 @@ def Jugar_ahorcado():
         print("Palabra:", " ".join(palabra_oculta))   # Función que combina una lista en una cadena con espacios.
 
         # Verificar si se ha ganado.
-        if "_" not in palabra_oculta:
+        if "_" not in palabra_oculta:   # Comprueba si el subrayado no está  en la cadena.
             print("¡Felicidades! Adivinaste la palabra:", palabra)
             break
 
