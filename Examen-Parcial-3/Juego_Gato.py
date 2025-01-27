@@ -25,7 +25,7 @@ def Num_de_jugadores() -> int:
         print("Por favor, ingresa una opción válida.")
 
 
-def Imprimir_tablero():
+def Imprimir_tablero()-> None:
     '''
     Función para la impresion del tablero.
     '''
@@ -50,7 +50,7 @@ def Verificar_ganador():
             return True
     return False
 
-def Un_Jugador():
+def Un_Jugador()-> None:
     '''
     Función para 2 jugadores.
     '''
@@ -85,7 +85,7 @@ def Un_Jugador():
     Imprimir_tablero()
     print("¡Es un empate!")
 
-def Dos_Jugardores():
+def Dos_Jugardores()-> None:
     '''
     Función para 2 jugadores.
     '''
@@ -104,7 +104,7 @@ def Dos_Jugardores():
             print("Posición ocupada, intenta de nuevo.")
     Imprimir_tablero()
     print("¡Es un empate!")
-
+#
 def Juego_Gato() -> None:
     opcion = None  #  Apliqué lo de la variable None
     while opcion  != 0:
