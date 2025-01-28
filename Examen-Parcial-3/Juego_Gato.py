@@ -104,7 +104,7 @@ def Dos_Jugardores()-> None:
             print("Posición ocupada, intenta de nuevo.")
     Imprimir_tablero()
     print("¡Es un empate!")
-#
+
 def Juego_Gato() -> None:
     opcion = None  #  Apliqué lo de la variable None
     while opcion  != 0:
