@@ -82,7 +82,7 @@ def Jugar_ahorcado():
     '''
     Función con la lógica del programa.
     '''
-    palabras = ["python", "ahorcado", "juego", "programa", "computadora"]
+    palabras = ["python"]
     palabra = random.choice(palabras)   # Función que selecciona un elemento de la lista al azar.
     intentos = 6
     adivinadas = []
