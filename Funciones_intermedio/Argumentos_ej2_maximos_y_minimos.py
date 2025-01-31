@@ -46,7 +46,7 @@ def pedir_numeros()-> None:
         entrada = input(f"Ingresa un número con decimales [{contador}](o presiona enter para terminar): ")
         if entrada == "":
             break
-        if entrada.startswith('-'): # Verifica si comienza con un signo.
+        if entrada.startswith('-') or entrada.isdigit(): # Verifica si comienza con un signo.
             numero = float(entrada)
             # Lo agrega a la lista.
             numeros.append(numero)
