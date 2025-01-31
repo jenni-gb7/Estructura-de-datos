@@ -48,6 +48,7 @@ def pedir_numeros()-> None:
             break
         if entrada.startswith('-'): # Verifica si comienza con un signo.
             numero = float(entrada)
+            # Lo agrega a la lista.
             numeros.append(numero)
             contador += 1
         else:
@@ -61,7 +62,7 @@ def main()-> None:
     Función principal.
     """
     print("*** Programa para Encontrar el Valor Máximo y Mínimo ***")
-
+    # Llama a las funciones anteriores
     numeros = pedir_numeros()
     encontrar_max_min(*numeros)
 
