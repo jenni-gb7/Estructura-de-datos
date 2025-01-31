@@ -37,7 +37,7 @@ def pedir_numeros()-> None:
         if entrada == "":
             break
         # Para verificar si es un número válido.
-        if entrada.isdigit():   # Verifica si entrada está compuesta solo por dígitos positivos, sin signos ni espacios.
+        if entrada.isdigit() or entrada.startswith('-'):   # Verifica si entrada está compuesta solo por dígitos positivos, sin signos ni espacios.
             numero = int(entrada)
         # Si el número es par lo agrega a la lista.
             if numero % 2 == 0:
