@@ -7,9 +7,10 @@ Examen Parcial 3: Juego del ahorcado.
 
 import random
 
-def Mostrar_monito(intentos):
+def Mostrar_monito(intentos: int)-> None:
     """
-    Función para dibujar el monito del ahorcado según el número de intentos restantes.
+    Dibuja el monigote del ahorcado según el número de intentos restantes.
+    :param intentos: Número de intentos restantes.
     """
     monito = [
         """
@@ -78,10 +79,14 @@ def Mostrar_monito(intentos):
     ]
     print(monito[6 - intentos])
 
-def Jugar_ahorcado():
-    '''
-    Función con la lógica del programa.
-    '''
+def Jugar_ahorcado()-> int:
+    """
+    Ejecuta la lógica del juego del ahorcado.
+    El jugador debe adivinar letras de una palabra secreta seleccionada aleatoriamente.
+    Se muestra el monigote del ahorcado según los intentos restantes.
+    """
+
+
     palabras = ["python"]
     palabra = random.choice(palabras)   # Función que selecciona un elemento de la lista al azar.
     intentos = 6
