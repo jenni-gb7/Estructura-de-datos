@@ -119,7 +119,6 @@ def Jugar_ahorcado()-> int:
         if "_" not in palabra_oculta:   # Comprueba si el subrayado no está  en la cadena.
             print("¡Felicidades! Adivinaste la palabra:", palabra)
             break
-
         # Pedir una letra al usuario.
         letra = input("Adivina una letra: ").lower()    # Convierte todos los caracteres de una cadena a minúsculas.
         if len(letra) != 1 or not letra.isalpha():  # Comprueba si una cadena está formada solo por letras.
@@ -133,7 +132,6 @@ def Jugar_ahorcado()-> int:
         else:
             print("Incorrecto.")
             intentos -= 1
-
     # Si pierde.
     if intentos == 0:
         print()
