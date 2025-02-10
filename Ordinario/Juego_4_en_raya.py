@@ -2,11 +2,12 @@
 Jennifer Marlene Gutierrez Beteta
 22 de enero de 2025.
 Descripción:
-Examen Parcial 3: Juego del ahorcado.
-'''
+Examen Parcial 3: 4 en raya.
 
+'''# Colores
+AZUL = "\033[94m"
+RESET = "\033[0m"
 import random
-
 
 def inicializar_tablero() -> list:
     """
@@ -21,6 +22,16 @@ def Num_de_jugadores() -> int:
     Solicita al usuario el número de jugadores y valida la entrada.
     :return: Entero que indica el modo de juego (0: Salir, 1: Contra CPU, 2: Dos jugadores).
     """
+    CUATRO_EN_RAYA = """
+              EEEEE  N   N     RRRR   AAAAA  Y   Y  AAAAA
+           4  E      NN  N     R   R  A   A   Y Y   A   A
+        4444  EEEE   N N N     RRRR   AAAAA    Y    AAAAA
+           4  E      N  NN     R  R   A   A    Y    A   A
+           4  EEEEE  N   N     R   R  A   A    Y    A   A
+        """
+    # Imprimir el texto con colores
+    print(AZUL + CUATRO_EN_RAYA + RESET)
+
     while True:
         print("Bienvenido al juego 4 en raya")
         print("[1].- Jugar con CPU")
