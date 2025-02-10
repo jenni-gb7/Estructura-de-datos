@@ -23,7 +23,7 @@ def eleccion_caballo()->int:
     print("[3]Copas     🐎")
     print("[4]Espadas   🐎")
     apuesta = input("Ingrese el numero de su caballo a seguir o ingrese 0 para finalizar: ")
-    while not (apuesta.isnumeric() and 0 <= int(apuesta) <= 2):
+    while not (apuesta.isnumeric() and 0 <= int(apuesta) <= 4):
         print("Valor no asociado a ningún caballo")
         print("***🏇Carrera de caballos🏇***")
         print("[1]Bastos    🐎")
@@ -171,3 +171,7 @@ def carrera_caballos()->None:
             print("Tu caballo ah ganado la carrera")
         else:
             print("Tu caballo ha perdido la carrera")
+
+#from Carrera_de_caballos_modulo import main
+if __name__ == '__main__':
+    main()
