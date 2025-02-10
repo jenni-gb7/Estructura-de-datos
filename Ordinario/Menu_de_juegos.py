@@ -5,9 +5,10 @@ Descripción:
 Examen Parcial 3: Juego 4 en raya.
 '''
 
-import Juego_ahorcado
-import Juego_de_gato
+import  Juego_ahorcado
+import  Juego_de_gato
 import Juego_4_en_raya
+import Ej4_batalla_naval
 import Carrera_de_caballos_modulo
 
 def mostrar_menu() -> None:
@@ -37,7 +38,7 @@ def mostrar_menu() -> None:
             elif eleccion == 3:
                 Juego_4_en_raya.Juego_4raya()
             elif eleccion == 4:
-                print("Batalla naval aún no implementado.")
+                Ej4_batalla_naval.main()
             elif eleccion == 5:
                 Carrera_de_caballos_modulo.main()
             elif eleccion == 0:
