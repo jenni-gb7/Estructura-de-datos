@@ -37,7 +37,7 @@ def menu() -> int:
 
     print("0) Salir.")
     print("1) Jugar.")
-    print("2) instrucciones.")
+    print("2) Instrucciones.")
     opcion = input("Ingrese la opcion: ")
     opcion = verificar(opcion) # Convierte la opción a número entero y verifica validez.
 
