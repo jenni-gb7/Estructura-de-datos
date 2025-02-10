@@ -215,5 +215,5 @@ def usuario_vs_cpu()->None:
         elif turnos_totales == 9:
             print("Empate")
 
-
-juego_del_gato()
+if __name__ == '__main__':
+    juego_del_gato()
