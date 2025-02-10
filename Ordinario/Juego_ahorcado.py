@@ -5,6 +5,10 @@ Descripción:
 Examen Parcial 3: Juego del ahorcado.
 '''
 
+# Colores
+ROJO = "\033[91m"
+RESET = "\033[0m"
+
 import random
 
 def Mostrar_monito(intentos: int)-> None:
@@ -91,6 +95,16 @@ def Jugar_ahorcado()-> int:
     palabra = random.choice(palabras)   # Función que selecciona un elemento de la lista al azar.
     intentos = 6
     adivinadas = []
+
+    AHORCADO = """
+           AAAAA  H   H  OOOOO  RRRRR   CCCCC  AAAAA  DDDDD   OOOOO
+           A   A  H   H  O   O  R    R C       A   A  D    D  O   O
+           AAAAA  HHHHH  O   O  RRRRR  C       AAAAA  D    D  O   O
+           A   A  H   H  O   O  R  R   C       A   A  D    D  O   O
+           A   A  H   H  OOOOO  R   RR  CCCCC  A   A  DDDDD   OOOOO
+           """
+    # Imprimir el texto con colores
+    print(ROJO + AHORCADO + RESET)
 
     print("¡Bienvenido al juego del Ahorcado!")
     while intentos > 0:
