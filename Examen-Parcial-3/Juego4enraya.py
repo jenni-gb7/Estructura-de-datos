@@ -185,7 +185,8 @@ def Juego_4raya() -> None:
     '''
     Ejecuta la lógica principal del juego 4 en Raya, permitiendo al usuario seleccionar
     entre jugar contra la CPU, jugar con otro jugador o salir del juego.
-    No recibe ni devuelve valores.
+    :param: No recibe ni devuelve valores.
+    :return: La opción seleccionada.
     '''
     opcion = None  # Apliqué lo de la variable None.
 
