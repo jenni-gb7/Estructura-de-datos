@@ -8,7 +8,7 @@ def Num_de_jugadores() -> int:
     Solicita al usuario el número de jugadores y valida la entrada.
     '''
     while True:
-        print("Bienvenido al juego del Gato")
+        print("Bienvenido al juego 4 en raya")
         print("[1].- Jugar con cpu")
         print("[2].- Jugar con 2 jugadores")
         print("[0].- Salir")
