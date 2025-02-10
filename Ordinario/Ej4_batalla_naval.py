@@ -37,14 +37,14 @@ def menu() -> int:
 
     print("0) Salir.")
     print("1) Jugar.")
-    print("2) Instrucciones.")
+    print("2) instrucciones.")
     opcion = input("Ingrese la opcion: ")
     opcion = verificar(opcion) # Convierte la opción a número entero y verifica validez.
 
     # Bucle para validar la opción hasta que sea correcta.
     while not (opcion  == 0 or opcion == 1 or opcion == 2):
         print("Opción invalida.")
-        print("___________________________________________________________________")
+        print("_")
         opcion = input("Intenta nuevamente: ")
         opcion = verificar(opcion)
         print()
@@ -60,7 +60,7 @@ def verificar(opcion:str) -> int:
     """
     while not opcion.isnumeric(): # Verifica si la entrada es numérica.
         print("Opción invalida.")
-        print("___________________________________________________________________")
+        print("_")
         opcion = input("Intenta nuevamente: ")
         print()
     return  int(opcion)
@@ -100,7 +100,7 @@ def desplegar_barcos(num_de_bracos : int ) -> list[int]:
         # Verifica que las coordenadas estén dentro del tablero (0-9).
         while not (0 <= columna <= 9) and not (0 <= fila <= 9):
             print("la coordenadas son diferentes al tablero.")
-            print("___________________________________________________________________")
+            print("_")
             print("Intente nuevamente.")
             columna = input("Columna: ")
             columna = verificar(columna)
@@ -196,7 +196,7 @@ def main() -> None:
             # Verifica que el número de barcos esté dentro del rango permitido.
             while not (num_de_barcos >= 1 and num_de_barcos <= 70):
                 print("Opción invalida.")
-                print("___________________________________________________________________")
+                print("_")
                 num_de_barcos = input("Intenta nuevamente: ")
                 num_de_barcos = verificar(num_de_barcos)
                 print()
@@ -216,7 +216,8 @@ def main() -> None:
                 contador += 1
             print()
             print("Comienza el juego.")
-            while detener != 0:
+            while detener != 0 and contador_del_jugador_1 < num_de_barcos and contador_del_jugador_1 < num_de_barcos:
+
                 while bandera != 0 and contador_del_jugador_1 < num_de_barcos:
                     print("Turno del jugador 1")
                     fila = input("Fila: ")
@@ -226,7 +227,7 @@ def main() -> None:
                     # Válida que la coordenada ingresada esté dentro del tablero.
                     while not (0 <= columna <= 9) and not (0 <= fila <= 9):
                         print("la coordenadas son diferentes al tablero.")
-                        print("___________________________________________________________________")
+                        print("_")
                         print("Intente nuevamente.")
                         columna = input("Columna: ")
                         columna = verificar(columna)
@@ -237,7 +238,7 @@ def main() -> None:
                     # Verifica si el disparo impactó un barco.
                     if tablero_2[indice] == "⛴":
                         print(TOCADO)  # Mensaje de impacto.
-                        print("___________________________________________________________________")
+                        print("_")
                         tablero_2[indice] = "~"
                         mostrar_barcos(indice)
                         bandera = 1
@@ -246,7 +247,7 @@ def main() -> None:
 
                     else:
                         print(AGUA)  # Mensaje de fallo en el disparo.
-                        print("___________________________________________________________________")
+                        print("_")
                         bandera = 0
 
                 print()
@@ -262,7 +263,7 @@ def main() -> None:
                     # Válida que la coordenada ingresada esté dentro del tablero.
                     while not (0 <= columna <= 9) and not (0 <= fila <= 9):
                         print("la coordenadas son diferentes al tablero.")
-                        print("___________________________________________________________________")
+                        print("_")
                         print("Intente nuevamente.")
                         columna = input("Columna: ")
                         columna = verificar(columna)
@@ -273,15 +274,15 @@ def main() -> None:
                     # Verifica si el disparo impactó un barco.
                     if tablero_1[indice] == "⛴":
                         print(TOCADO)
-                        print("___________________________________________________________________")
+                        print("_")
                         mostrar_barcos(indice)
                         tablero_1[indice] = "~"
-                        bandera = None
+                        bandera = 1
                         contador_del_jugador_2 += 1
                         print()
                     else:
                         print(AGUA) # Mensaje de falló en el disparo.
-                        print("___________________________________________________________________")
+                        print("_")
                         bandera = 0 # Finaliza el turno del jugador 2.
                         print()
                 detener, bandera = ganador(tablero_1, 2) # Verifica si el jugador 2 ha ganado.
@@ -296,10 +297,9 @@ def main() -> None:
             print("El oponente responde si el disparo ha alcanzado uno de sus barcos (Tocado) o si ha caído al agua (Agua).")
             print("Si el disparo toca un barco, el jugador que dispara tiene derecho a seguir disparando hasta fallar. El objetivo es acertar ")
             print("todas las casillas que ocupa un barco para hundirlo por completo.")
-        print("_________________________________________________________________________________________________________________________________")
+        print("_")
 
 
 """ %%%%%%%     CÓDIGO A NIVEL DE MÓDULO    %%%%%%%%%%%%%%%%%%%%% """
 if __name__ == '__main__':
     main()
-
