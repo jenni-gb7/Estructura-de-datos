@@ -6,10 +6,16 @@ Examen Parcial 3: Juego 4 en raya.
 '''
 
 import Juego_ahorcado
+import Juego_de_gato
 import Juego_4_en_raya
 import Carrera_de_caballos_modulo
 
-def mostrar_menu() -> int:
+def mostrar_menu() -> None:
+    '''
+    Muestra un menú con diferentes opciones de juegos.
+    El usuario debe ingresar una opción válida y el juego correspondiente se ejecutará.
+    Una vez terminado el juego, se regresa al menú principal.
+    '''
     while True:
         print("*** Elige uno de los juegos ***")
         print("1. Ahorcado")
@@ -26,27 +32,21 @@ def mostrar_menu() -> int:
 
             if eleccion == 1:
                 Juego_ahorcado.Jugar_ahorcado()
-                break
             elif eleccion == 2:
-                Juego_Gato.jugar_gato()
-                break
+                Juego_de_gato.juego_del_gato()
             elif eleccion == 3:
                 Juego_4_en_raya.Juego_4raya()
-                break
             elif eleccion == 4:
-
-                break
+                print("Batalla naval aún no implementado.")
             elif eleccion == 5:
                 Carrera_de_caballos_modulo.main()
-                break
             elif eleccion == 0:
                 print("¡Hasta luego!")
                 break
             else:
-                print("Seleccion no válida, por favor elige una opción entre 0 y 3")
+                print("Selección no válida, por favor elige una opción entre 0 y 5")
         else:
             print("Por favor, ingresa un número válido")
-
 
 if __name__ == "__main__":
     mostrar_menu()
