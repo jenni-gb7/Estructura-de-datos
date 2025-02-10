@@ -91,7 +91,7 @@ def Jugar_ahorcado()-> int:
     """
 
 
-    palabras = ["python"]
+    palabras = ["python","computadora","ahorcado","juego","palabras"]
     palabra = random.choice(palabras)   # Función que selecciona un elemento de la lista al azar.
     intentos = 6
     adivinadas = []
