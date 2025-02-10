@@ -1,12 +1,13 @@
 import random
 def juego_del_gato()->None:
     modo=modos_juego()
-    if modo==1:
-        usuario_vs_usuario()
-    elif modo==2:
-        usuario_vs_cpu()
-    else:
-        print("Saliendo del juego")
+    while modo!=0:
+        if modo==1:
+            usuario_vs_usuario()
+        elif modo==2:
+            usuario_vs_cpu()
+        modo = modos_juego()
+    print("Programa terminado")
     print()
 
 def modos_juego()->int:
@@ -26,7 +27,7 @@ def modos_juego()->int:
     while not (opcion.isnumeric() and 0 <= int(opcion) <= 2):
         print("Opción no válida")
         print("***************************")
-        print("Modo de juego:")
+        print("Modo de juego: ")
         print("1) Usuario vs Usuarios")
         print("2) Usuario vs CPU")
         print("0) Salir")
@@ -214,5 +215,5 @@ def usuario_vs_cpu()->None:
         elif turnos_totales == 9:
             print("Empate")
 
-if __name__ == '__main__':
-    juego_del_gato()
+
+juego_del_gato()
