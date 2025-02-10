@@ -13,7 +13,7 @@ import random
 
 def Mostrar_monito(intentos: int)-> None:
     """
-    Dibuja el monigote del ahorcado según el número de intentos restantes.
+    Dibuja el monito del ahorcado según el número de intentos restantes.
     :param intentos: Número de intentos restantes.
     """
     monito = [
