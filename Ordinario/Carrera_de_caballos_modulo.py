@@ -2,7 +2,9 @@
 # Fecha: febrero de 2025
 # Carrera de caballos módulo.
 import random
-import time
+# Colores
+AMARILLO = "\033[93m"
+RESET = "\033[0m"
 
 def main():
     """
@@ -17,6 +19,23 @@ def eleccion_caballo()->int:
        :param: No recibe ningún valor
        :return: El entero correspondiente al caballo seleccionado.
        """
+    CARRERA_DE_CABALLOS = """
+        CCCCC  AAAAA  RRRRR  RRRRR  EEEEE  RRRRR   AAAAA      DDDDD  EEEEE
+        C      A   A  R    R R    R E      R    R  A   A      D    D E    
+        C      AAAAA  RRRRR  RRRRR  EEEE   RRRRR   AAAAA      D    D EEEE 
+        C      A   A  R  R   R  R   E      R  R    A   A      D    D E    
+        CCCCC  A   A  R   RR R   RR EEEEE  R   RR  A   A      DDDDD  EEEEE
+
+        CCCCC  AAAAA  BBBBB   AAAAA  L      L      OOOOO  SSSSS
+        C      A   A  B    B  A   A  L      L      O   O  S    
+        C      AAAAA  BBBBB   AAAAA  L      L      O   O  SSSS 
+        C      A   A  B    B  A   A  L      L      O   O      S
+        CCCCC  A   A  BBBBB   A   A  LLLLL  LLLLL  OOOOO  SSSSS
+        """
+
+    # Imprimir el texto con colores
+    print(AMARILLO + CARRERA_DE_CABALLOS + RESET)
+
     print("***🏇Carrera de caballos🏇***")
     print("[1]Bastos    🐎")
     print("[2]Oro       🐎")
