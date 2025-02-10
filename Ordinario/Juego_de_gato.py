@@ -1,3 +1,7 @@
+# Colores
+CIAN = "\033[96m"
+RESET = "\033[0m"
+
 import random
 def juego_del_gato()->None:
     modo=modos_juego()
@@ -17,6 +21,16 @@ def modos_juego()->int:
        :param: No recibe ningún valor
        :return: El entero correspondiente a la opción seleccionada.
        """
+    GATO = """
+        GGGG   AAAAA  TTTTT  OOOOO
+        G      A   A    T    O   O
+        G  GG  AAAAA    T    O   O
+        G   G  A   A    T    O   O
+        GGGG   A   A    T    OOOOO
+        """
+    # Imprimir el texto con colores
+    print(CIAN + GATO + RESET)
+
     print()
     print("***************************")
     print("Modo de juego:")
