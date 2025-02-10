@@ -5,9 +5,9 @@ Descripción:
 Examen Parcial 3: Juego 4 en raya.
 '''
 
-import Juego_Ahorcado
-import Juego4enraya
-
+import Juego_ahorcado
+import Juego_4_en_raya
+import Carrera_de_caballos_modulo
 
 def mostrar_menu() -> int:
     while True:
@@ -25,19 +25,19 @@ def mostrar_menu() -> int:
             eleccion = int(eleccion)
 
             if eleccion == 1:
-                Juego_Ahorcado.Jugar_ahorcado()
+                Juego_ahorcado.Jugar_ahorcado()
                 break
             elif eleccion == 2:
                 Juego_Gato.jugar_gato()
                 break
             elif eleccion == 3:
-                Juego4enraya.Juego_4raya()
+                Juego_4_en_raya.Juego_4raya()
                 break
             elif eleccion == 4:
-                Juego4enraya.Juego_4raya()
+
                 break
             elif eleccion == 5:
-                Juego4enraya.Juego_4raya()
+                Carrera_de_caballos_modulo.main()
                 break
             elif eleccion == 0:
                 print("¡Hasta luego!")
