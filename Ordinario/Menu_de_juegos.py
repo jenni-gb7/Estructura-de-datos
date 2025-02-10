@@ -4,6 +4,9 @@ Jennifer Marlene Gutierrez Beteta
 Descripción:
 Examen Parcial 3: Juego 4 en raya.
 '''
+# Colores
+VERDE = "\033[92m"
+RESET = "\033[0m"
 
 import  Juego_ahorcado
 import  Juego_de_gato
@@ -17,6 +20,17 @@ def mostrar_menu() -> None:
     El usuario debe ingresar una opción válida y el juego correspondiente se ejecutará.
     Una vez terminado el juego, se regresa al menú principal.
     '''
+
+    MINIJUEGOS = """
+        M   M  III  N   N  III  JJJJJ  U   U  EEEEE  GGGG   OOOOO  SSSSS
+        MM MM   I   NN  N   I      J   U   U  E      G      O   O  S    
+        M M M   I   N N N   I      J   U   U  EEEE   G  GG  O   O  SSSS 
+        M   M   I   N  NN   I   J  J   U   U  E      G   G  O   O      S
+        M   M  III  N   N  III   JJ     UUU   EEEEE  GGGG   OOOOO  SSSSS
+        """
+    # Imprimir el texto con colores
+    print(VERDE + MINIJUEGOS + RESET)
+
     while True:
         print("*** Elige uno de los juegos ***")
         print("1. Ahorcado")
