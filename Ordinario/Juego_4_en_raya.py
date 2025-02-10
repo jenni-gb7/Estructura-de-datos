@@ -4,7 +4,8 @@ Jennifer Marlene Gutierrez Beteta
 Descripción:
 Examen Parcial 3: 4 en raya.
 
-'''# Colores
+'''
+# Colores
 AZUL = "\033[94m"
 RESET = "\033[0m"
 import random
